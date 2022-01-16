@@ -6,8 +6,8 @@ locals {
 }
 
 resource "random_password" "password" {
-  length           = 16
-  special          = true
+  length           = 12
+  special          = false
   override_special = "_%@"
 }
 
